@@ -78,6 +78,7 @@ export async function POST(request) {
 
 
     } catch (error) {
-        NextResponse.json({ success: false, message: error.message })
+        console.error('Error adding product:', error)
+        return NextResponse.json({ success: false, message: error.message })
     }
 }
