@@ -81,13 +81,13 @@ const Product = () => {
                         </div>
                         <p>(4.5)</p>
                     </div>
-                    <p className="text-gray-600 mt-3">
+                    <p className="text-black-850 mt-3">
                         {productData.description}
                     </p>
                     <p className="text-3xl font-medium mt-6">
-                        ${productData.offerPrice}
+                        ₹{productData.offerPrice}
                         <span className="text-base font-normal text-gray-800/60 line-through ml-2">
-                            ${productData.price}
+                            ₹{productData.price}
                         </span>
                     </p>
                     <hr className="bg-gray-600 my-6" />
@@ -130,7 +130,7 @@ const Product = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-6 pb-14 w-full">
                     {products.slice(0, 5).map((product, index) => <ProductCard key={index} product={product} />)}
                 </div>
-                <button className="px-8 py-2 mb-16 border rounded text-gray-500/70 hover:bg-slate-50/90 transition">
+                <button className="px-8 py-2 mb-16 border rounded text-black-500/70 hover:bg-orange-50/90 transition">
                     See more
                 </button>
             </div>
